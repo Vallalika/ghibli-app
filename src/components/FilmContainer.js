@@ -1,14 +1,13 @@
 import React from 'react';
-import FilmHeader from './FilmHeader';
-import FilmInfo from './FilmInfo';
+import FilmTitleClickable from './FilmTitleClickable';
 
-const FilmContainer = () => {
+const FilmContainer = ({filmInfo,favList}) => {
 
+    // film info is what we expect 
     return(
         <>
             <h4>This is FilmContainer.js</h4>
-            <FilmHeader />
-            <FilmInfo/>
+            <FilmTitleClickable film={filmInfo} favList={favList}/>
         </>
 
     )

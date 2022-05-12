@@ -1,13 +1,12 @@
 import React from "react";
 import FilmTitleClickable from "./FilmTitleClickable";
 
-const FavListItem = () => {
+const FavListItem = ({film, favList}) => {
 
 
     return (
         <>
-            <h4>FavListItem</h4>
-            <FilmTitleClickable />
+            <FilmTitleClickable film={film} favList={favList}/>
         </>
     )
 }
